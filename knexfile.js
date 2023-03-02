@@ -12,10 +12,10 @@ module.exports = {
     connection: DATABASE_URL,
     pool: { min: 0, max: 5 },
     migrations: {
-      directory: __dirname + "/db/migrations",
+      directory: path.join(__dirname, "src", "db", "migrations"),
     },
     seeds: {
-      directory: __dirname + "/src/db/seeds",
+      directory: path.join(__dirname, "src", "db", "seeds"),
     },
   },
 
@@ -24,10 +24,10 @@ module.exports = {
     connection: DATABASE_URL,
     pool: { min: 0, max: 5 },
     migrations: {
-      directory: __dirname + "src/db/migrations",
+      directory: path.join(__dirname, "src", "db", "migrations"),
     },
     seeds: {
-      directory: __dirname + "/src/db/seeds",
+      directory: path.join(__dirname, "src", "db", "seeds"),
     },
   },
 
